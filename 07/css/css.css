@@ -1,0 +1,173 @@
+body{
+	width: 100%;
+	min-height: 2500px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(../img/1.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+* {
+	box-sizing: border-box;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clearfix{
+	content: "";
+	display: block;
+	clear: both;
+}
+header{
+	width: 1200px;
+	position: relative;
+	top: 50px;
+	margin:0 auto;
+}
+.menu{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.menu ul{
+	height: 30px;
+}
+.menu ul li{
+	float: left;	
+}
+.menu ul li a{
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 5px;
+	border: 1px solid rgba(255,255,255,0);
+	transition: all 0.5s; 
+}
+.menu ul li a:hover{
+	border: 1px solid rgba(255,255,255,1);
+	color: #ace;
+	font-size: 25px;
+}
+
+section{
+	width: 1200px;
+	margin: 60px auto;
+}
+section li{
+	float: left;
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	margin-right:30px;
+	text-align: center;
+	background-color: rgba(250,212,121,0.5);
+}
+.img ul li{
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	margin: 25px;
+	margin-right: calc(200px/3 - 3px);
+}
+.img ul li img{
+	width: 100%;
+}
+.img ul li::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	width: 0%;
+	height: 0%;
+	opacity: 5;
+	overflow: hidden;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,0.4));
+	transition: all .10s;	
+}
+.img ul li:nth-of-type(2n):hover::before{
+	height: 0;
+}
+.img ul li:nth-of-type(2n+1):hover::before{
+	width: 0;
+}
+.img ul li span{
+	position: absolute;
+	width: 20px;
+	height:30px;
+	line-height: 100px;
+	font-size: 100px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 34px 92px;
+	opacity: 0;
+	transition: all .8s;
+}
+.img ul li:hover span{
+	opacity: 6;
+}
+/*绗笁涓猻section*/
+main .lian p{
+	color: #000000;
+}
+main .lian .lianxi p{
+	
+}
+main .lian .lianxi p span{
+	padding: 5px 20px;
+	background-color: #fff;
+	display:inline-block;
+	color: #000;
+}
+main .lian .lianxi p .hei{
+	background-color: #fff;
+	color: #000;
+}
+.lian .liu input,.lian .liu select,.lian .liu textarea{
+	padding-left: 15px;
+	width:312px;height:42px;
+	margin:5px;
+	border-radius:5px ;
+	border: none;
+}
+.lian .liu input:focus,.lian .liu textarea:focus{
+	border:none;
+	outline: none;
+}
+.lian .liu input[type="submit"],.lian .liu textarea{
+	width:34.5%;
+}
+.lian .liu input[type="submit"]{
+	position: absolute;
+	background-color: deepskyblue;
+
+}
+/*footer閮ㄥ垎*/
+footer{
+	color: #000;
+}
+footer .top{
+	padding: 10px 10px 10px 10px;
+	border:1px solid #fff;
+	position: fixed;
+	bottom: 30px;
+	right:30px;
+}
+footer .top a{
+	color: #000000;
+}
+.lian{
+	margin:400px 0 0 0;
+}
